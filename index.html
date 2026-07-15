@@ -1,10 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FlowNest Automations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowNest Automations — Automations, built to nest in your business.</title>
+<meta name="description" content="FlowNest Automations builds automated systems that handle the busywork — ready-made workflows and custom automation for service businesses.">
+<link rel="icon" href="assets/flownest-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: sans-serif; background: #0e1463; color: white; display: flex; height: 100vh; align-items: center; justify-content: center; margin: 0;">
-  <h1>FlowNest Automations — coming soon</h1>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <img src="assets/flownest-icon.png" alt="FlowNest Automations logo">
+      <span><span class="flow">Flow</span><span class="nest">Nest</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#problems">Problems</a>
+      <a href="#products">Products</a>
+      <a href="#process">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">AI Automation Agency</span>
+      <h1>Automations, built to nest in your business.</h1>
+      <p class="hero-sub">We design and build automated systems that quietly handle the busywork — so nothing falls through the cracks, and nobody's stuck doing it by hand.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="https://flownestautomations.gumroad.com/l/aireceptionist" class="btn btn-secondary" target="_blank" rel="noopener">Browse workflows</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="flow-mark" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="draw" d="M60 160C60 100 110 55 175 55C240 55 275 100 275 140" stroke="#0e1463" stroke-width="14" stroke-linecap="round"/>
+        <path class="draw" d="M340 240C340 300 290 345 225 345C160 345 125 300 125 260" stroke="#008f9f" stroke-width="14" stroke-linecap="round"/>
+        <path class="draw" d="M100 150C100 190 130 215 170 215C230 215 230 155 290 155C330 155 355 185 355 215" stroke="#4fb8c4" stroke-width="10" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEMS -->
+<section id="problems">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Everyday Drag</span>
+      <h2>Where businesses quietly lose money</h2>
+      <p>None of these look like a big deal on their own. Added up over a month, they're the difference between a fully booked calendar and an empty one.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <span class="num">01</span>
+        <h3>Missed inquiries</h3>
+        <p>A message comes in after hours. By the time someone replies, the customer has already booked somewhere else.</p>
+      </div>
+      <div class="problem-card reveal">
+        <span class="num">02</span>
+        <h3>Missed calls</h3>
+        <p>Every unanswered call is a lead walking away — and most people never call back a second time.</p>
+      </div>
+      <div class="problem-card reveal">
+        <span class="num">03</span>
+        <h3>Slow follow-up</h3>
+        <p>Leads go cold waiting on a reply that should have taken minutes, not a day.</p>
+      </div>
+      <div class="problem-card reveal">
+        <span class="num">04</span>
+        <h3>Manual booking</h3>
+        <p>Back-and-forth scheduling eats time that should be going into the actual work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER SPLIT -->
+<section class="section-alt" id="offer">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Two ways to work with us</h2>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-card reveal">
+        <span class="eyebrow">Ready to deploy</span>
+        <h3>Off-the-shelf automations</h3>
+        <p>Ready-made workflows you set up once and run yourself. Built, tested, and fully documented — no automation experience required.</p>
+        <a href="https://flownestautomations.gumroad.com/l/aireceptionist" class="btn btn-secondary" target="_blank" rel="noopener">Browse workflows</a>
+      </div>
+      <div class="offer-card highlight reveal">
+        <span class="eyebrow">Built around you</span>
+        <h3>Custom systems</h3>
+        <p>Automation built around how your business actually works — from the first conversation to a fully deployed system.</p>
+        <a href="#contact" class="btn btn-teal">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We've Built</span>
+      <h2>Products</h2>
+      <p>Ready-made workflows, built and tested, ready to deploy in your business.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <span class="tag">Available now</span>
+        <h3>AI Receptionist &amp; Booking Closer</h3>
+        <p>Handles customer messages, checks real calendar availability, and books appointments automatically — no missed inquiry, no manual back-and-forth.</p>
+        <ul>
+          <li>Telegram and email out of the box, SMS available</li>
+          <li>Real-time Google Calendar availability checks</li>
+          <li>Books, reschedules, and cancels on its own</li>
+        </ul>
+        <a href="https://flownestautomations.gumroad.com/l/aireceptionist" class="btn btn-primary" target="_blank" rel="noopener">View on Gumroad</a>
+      </div>
+      <div class="product-card soon reveal">
+        <span class="tag">In progress</span>
+        <h3>More coming soon</h3>
+        <p>We're actively building the next workflow in the lineup.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-alt" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>How an engagement runs</h2>
+      <p>Applies to custom systems — off-the-shelf workflows are ready to deploy the moment you get them.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-step reveal">
+        <span class="step-num">01</span>
+        <h3>First conversation</h3>
+        <p>You tell us what's eating your time. We figure out if automation is the right fix.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">02</span>
+        <h3>Build</h3>
+        <p>We design and build the system around your actual workflow, not a generic template.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">03</span>
+        <h3>Handoff</h3>
+        <p>You get a working system, plus everything you need to run it day to day.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">04</span>
+        <h3>Support</h3>
+        <p>We stay reachable for fixes and tweaks after delivery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What You Get</span>
+      <h2>What changes</h2>
+    </div>
+    <div class="outcome-list">
+      <div class="outcome-item reveal">
+        <span class="mark">✓</span>
+        <p>Nothing falls through the cracks — every inquiry gets a response, day or night.</p>
+      </div>
+      <div class="outcome-item reveal">
+        <span class="mark">✓</span>
+        <p>Your time goes back to the work only you can do.</p>
+      </div>
+      <div class="outcome-item reveal">
+        <span class="mark">✓</span>
+        <p>One system, always on — no extra headcount, no extra software to babysit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / TRUST -->
+<section class="section-alt" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2>Systems first, always</h2>
+      <p>FlowNest builds automation the way it should be built: scoped to what a business actually needs, tested before it's handed over, and documented so it doesn't turn into a black box.</p>
+      <p>We're not interested in overcomplicating things to look impressive. If a simpler workflow solves the problem, that's the one we ship.</p>
+      <div class="commitment-box">
+        <p>We reply within one business day, every time.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="stack-label">What we build with</div>
+      <div class="stack-row">
+        <span class="badge">n8n</span>
+        <span class="badge">Google Gemini</span>
+        <span class="badge">Google Calendar</span>
+        <span class="badge">Google Sheets</span>
+        <span class="badge">Google Workspace</span>
+        <span class="badge">Telegram</span>
+        <span class="badge">Twilio</span>
+      </div>
+      <div class="stack-label">Also integrates with</div>
+      <div class="stack-row secondary">
+        <span class="badge">Slack</span>
+        <span class="badge">Notion</span>
+        <span class="badge">Airtable</span>
+        <span class="badge">HubSpot</span>
+        <span class="badge">Stripe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Do I need to know how to code, or use n8n myself?</summary>
+        <p>No. Off-the-shelf workflows come with a full setup guide, and custom systems are handed off fully built and documented — you don't need any automation experience to run either one.</p>
+      </details>
+      <details class="faq-item">
+        <summary>I already use my own tools — calendar, CRM, and so on. Does this replace them?</summary>
+        <p>No. Automations are built to connect to the tools you already use, not replace them. If something you rely on isn't supported out of the box, that's a conversation for the custom systems track.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is my data safe?</summary>
+        <p>Every integration runs through the official APIs of the platforms involved — your accounts stay yours, and nothing routes through a third-party server you don't control.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if what I need isn't covered by a ready-made workflow?</summary>
+        <p>That's exactly what the custom systems track is for. Get in touch and we'll figure out what a workflow built around your business would look like.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-section reveal">
+    <div class="wrap">
+      <span class="eyebrow" style="color:#4fb8c4;">Get In Touch</span>
+      <h2>Tell us what's slowing you down.</h2>
+      <p>Whether it's a ready-made workflow or something built from scratch — we'll reply within one business day.</p>
+      <a href="mailto:flownestautomations@gmail.com" class="btn btn-teal">Get in touch</a>
+      <span class="contact-email">flownestautomations@gmail.com</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#home" class="footer-brand">
+        <img src="assets/flownest-icon.png" alt="FlowNest Automations">
+        FlowNest Automations
+      </a>
+      <div class="footer-links">
+        <!-- TODO: replace # with real profile URLs -->
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:flownestautomations@gmail.com">Email</a>
+      </div>
+      <div class="footer-meta">
+        © 2026 FlowNest Automations. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
