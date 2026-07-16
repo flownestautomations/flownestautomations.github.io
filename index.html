@@ -8,7 +8,7 @@
 <link rel="icon" href="flownest-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,14 +34,30 @@
 
 <!-- HERO -->
 <header class="hero" id="home">
-  <img src="flownest-icon.png" alt="" class="hero-watermark" aria-hidden="true">
-  <div class="wrap hero-inner">
-    <span class="eyebrow">AI Automation Agency</span>
-    <h1>Automations, built to nest in your business.</h1>
-    <p class="hero-sub">We design and build automated systems that quietly handle the busywork — so nothing falls through the cracks, and nobody's stuck doing it by hand.</p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="https://flownestautomations.gumroad.com/l/aireceptionist" class="btn btn-secondary" target="_blank" rel="noopener">Browse workflows</a>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">AI automation agency</span>
+      <h1>Automations, built to nest in your business.</h1>
+      <p class="hero-sub">We design and build automated systems that quietly handle the busywork — so nothing falls through the cracks, and nobody's stuck doing it by hand.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-teal">Get in touch</a>
+        <a href="https://flownestautomations.gumroad.com/l/aireceptionist" class="btn btn-secondary" target="_blank" rel="noopener">Browse workflows</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <svg viewBox="0 0 500 360" role="img" aria-labelledby="flowTitle">
+        <title id="flowTitle">Diagram of an automated booking flow, from inquiry to confirmed booking</title>
+        <path class="flow-line" d="M60,300 C130,300 130,180 210,180 C300,180 300,290 380,290 C420,290 420,120 460,120" />
+        <circle class="flow-node" cx="60" cy="300" r="9"></circle>
+        <circle class="flow-node" cx="210" cy="180" r="9"></circle>
+        <circle class="flow-node" cx="380" cy="290" r="9"></circle>
+        <circle class="flow-node-solid" cx="460" cy="120" r="9"></circle>
+        <text class="flow-label" x="60" y="332" text-anchor="middle">inquiry</text>
+        <text class="flow-label" x="210" y="158" text-anchor="middle">matched</text>
+        <text class="flow-label" x="380" y="322" text-anchor="middle">availability</text>
+        <text class="flow-label" x="460" y="98" text-anchor="middle">booked</text>
+        <circle class="flow-pulse" r="5"></circle>
+      </svg>
     </div>
   </div>
 </header>
@@ -50,28 +66,28 @@
 <section id="problems">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">The Everyday Drag</span>
+      <span class="eyebrow">The everyday drag</span>
       <h2>Where businesses quietly lose money</h2>
       <p>None of these look like a big deal on their own. Added up over a month, they're the difference between a fully booked calendar and an empty one.</p>
     </div>
-    <div class="problem-list">
-      <div class="problem-row reveal">
-        <span class="num">01</span>
+    <div class="problem-grid reveal">
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
         <h3>Missed inquiries</h3>
         <p>A message comes in after hours. By the time someone replies, the customer has already booked somewhere else.</p>
       </div>
-      <div class="problem-row reveal">
-        <span class="num">02</span>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 8l-5 5M17 8l5 5"/><path d="M5 4h4l2 5-2.5 2.5a12 12 0 0 0 6 6L17 15l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
         <h3>Missed calls</h3>
         <p>Every unanswered call is a lead walking away — and most people never call back a second time.</p>
       </div>
-      <div class="problem-row reveal">
-        <span class="num">03</span>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
         <h3>Slow follow-up</h3>
         <p>Leads go cold waiting on a reply that should have taken minutes, not a day.</p>
       </div>
-      <div class="problem-row reveal">
-        <span class="num">04</span>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
         <h3>Manual booking</h3>
         <p>Back-and-forth scheduling eats time that should be going into the actual work.</p>
       </div>
@@ -81,11 +97,14 @@
 
 <!-- OFFER SPLIT -->
 <section class="section-alt" id="offer">
-  <div class="wrap">
+  <div class="wrap offer-wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">What We Do</span>
+      <span class="eyebrow">What we do</span>
       <h2>Two ways to work with us</h2>
     </div>
+    <svg class="offer-branch reveal" viewBox="0 0 340 48" aria-hidden="true">
+      <path d="M170,0 L170,16 M170,16 L60,16 L60,48 M170,16 L280,16 L280,48"></path>
+    </svg>
     <div class="offer-grid reveal">
       <div class="offer-card">
         <span class="eyebrow">Ready to deploy</span>
@@ -107,7 +126,7 @@
 <section id="products">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">What We've Built</span>
+      <span class="eyebrow">What we've built</span>
       <h2>Products</h2>
       <p>Ready-made workflows, built and tested, ready to deploy in your business.</p>
     </div>
@@ -136,33 +155,33 @@
 <section class="section-alt" id="process">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">How It Works</span>
+      <span class="eyebrow">How it works</span>
       <h2>How an engagement runs</h2>
       <p>Applies to custom systems — off-the-shelf workflows are ready to deploy the moment you get them.</p>
     </div>
-    <div class="timeline">
-      <div class="timeline-step reveal">
+    <div class="stepper reveal">
+      <div class="step">
         <span class="dot">01</span>
         <div>
           <h3>First conversation</h3>
           <p>You tell us what's eating your time. We figure out if automation is the right fix.</p>
         </div>
       </div>
-      <div class="timeline-step reveal">
+      <div class="step">
         <span class="dot">02</span>
         <div>
           <h3>Build</h3>
           <p>We design and build the system around your actual workflow, not a generic template.</p>
         </div>
       </div>
-      <div class="timeline-step reveal">
+      <div class="step">
         <span class="dot">03</span>
         <div>
           <h3>Handoff</h3>
           <p>You get a working system, plus everything you need to run it day to day.</p>
         </div>
       </div>
-      <div class="timeline-step reveal">
+      <div class="step">
         <span class="dot">04</span>
         <div>
           <h3>Support</h3>
@@ -177,20 +196,20 @@
 <section id="outcomes">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">What You Get</span>
+      <span class="eyebrow">What you get</span>
       <h2>What changes</h2>
     </div>
-    <div class="outcome-band">
-      <div class="outcome-item reveal">
-        <span class="letter">A</span>
+    <div class="outcome-band reveal">
+      <div class="outcome-anchor">
+        <span class="letter eyebrow">Day one</span>
         <p>Nothing falls through the cracks — every inquiry gets a response, day or night.</p>
       </div>
-      <div class="outcome-item reveal">
-        <span class="letter">B</span>
-        <p>Your time goes back to the work only you can do.</p>
+      <div class="outcome-item">
+        <span class="letter">Your time</span>
+        <p>Goes back to the work only you can do.</p>
       </div>
-      <div class="outcome-item reveal">
-        <span class="letter">C</span>
+      <div class="outcome-item">
+        <span class="letter">Your overhead</span>
         <p>One system, always on — no extra headcount, no extra software to babysit.</p>
       </div>
     </div>
@@ -201,13 +220,10 @@
 <section class="section-alt" id="about">
   <div class="wrap about-grid">
     <div class="about-copy reveal">
-      <span class="eyebrow">How We Work</span>
+      <span class="eyebrow">How we work</span>
       <h2>Systems first, always</h2>
       <p>FlowNest builds automation the way it should be built: scoped to what a business actually needs, tested before it's handed over, and documented so it doesn't turn into a black box.</p>
       <p>We're not interested in overcomplicating things to look impressive. If a simpler workflow solves the problem, that's the one we ship.</p>
-      <div class="commitment-box">
-        <p>We reply within one business day, every time.</p>
-      </div>
     </div>
     <div class="reveal">
       <div class="stack-label">What we build with</div>
@@ -263,12 +279,24 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-section reveal">
+    <svg class="contact-dots" viewBox="0 0 160 100" width="160" height="100" aria-hidden="true">
+      <circle cx="10" cy="14" r="3" style="fill:#29c4cc;opacity:0.7"></circle>
+      <circle cx="34" cy="14" r="3" style="fill:#29c4cc;opacity:0.5"></circle>
+      <circle cx="58" cy="14" r="3" style="fill:#29c4cc;opacity:0.3"></circle>
+      <circle cx="22" cy="38" r="3" style="fill:#29c4cc;opacity:0.5"></circle>
+      <circle cx="46" cy="38" r="3" style="fill:#29c4cc;opacity:0.3"></circle>
+      <circle cx="10" cy="62" r="3" style="fill:#29c4cc;opacity:0.3"></circle>
+      <circle cx="34" cy="62" r="3" style="fill:#29c4cc;opacity:0.2"></circle>
+    </svg>
     <div class="wrap">
-      <span class="eyebrow">Get In Touch</span>
+      <span class="eyebrow">Get in touch</span>
       <h2>Tell us what's slowing you down.</h2>
-      <p>Whether it's a ready-made workflow or something built from scratch — we'll reply within one business day.</p>
+      <p>Whether it's a ready-made workflow or something built from scratch, we'll get back to you.</p>
       <a href="mailto:flownestautomations@gmail.com" class="btn btn-teal">Get in touch</a>
-      <span class="contact-email">flownestautomations@gmail.com</span>
+      <div class="contact-meta">
+        <span class="contact-email">flownestautomations@gmail.com</span>
+        <span class="contact-reply">we reply within one business day</span>
+      </div>
     </div>
   </div>
 </section>
