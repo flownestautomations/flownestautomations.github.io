@@ -400,24 +400,22 @@ section { padding: 92px 0; }
   .step .dot { margin-bottom: 0; margin-right: 20px; flex-shrink: 0; }
 }
 
-/* ---------- outcomes: stacked band (nested inside about-grid) ---------- */
+/* ---------- outcomes: symmetric 2x2 card grid (nested inside about-grid) ---------- */
 .outcome-band {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 16px;
+  height: 100%;
 }
-.outcome-anchor {
-  background: var(--navy-deep);
-  border-radius: var(--radius-lg);
-  padding: 30px 32px;
-}
-.outcome-anchor .tag-label { color: var(--teal-bright); }
-.outcome-anchor p { color: var(--white); font-size: 1.3rem; font-weight: 600; line-height: 1.35; }
 .outcome-item {
   background: var(--white);
   border: 1.5px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .tag-label {
   display: block;
@@ -426,11 +424,29 @@ section { padding: 92px 0; }
   color: var(--teal);
   margin-bottom: 10px;
 }
-.outcome-item p { color: var(--navy); font-size: 1.02rem; font-weight: 600; line-height: 1.4; }
+.outcome-item p { color: var(--navy); font-size: 1rem; font-weight: 600; line-height: 1.4; }
 
 /* ---------- about / trust ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
 .about-copy p { font-size: 1.02rem; margin-bottom: 16px; }
+.about-list { margin: 20px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.about-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal-bright);
+}
 
 .stack-label {
   font-size: 0.8rem;
@@ -476,7 +492,10 @@ section { padding: 92px 0; }
   .tech-track { animation: none; }
 }
 
-@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .outcome-band { grid-template-columns: 1fr; grid-template-rows: none; }
+}
 
 /* ---------- FAQ ---------- */
 .faq-list { border-top: 1.5px solid var(--line); }
