@@ -163,12 +163,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .hero {
   position: relative;
   padding: 76px 0 90px;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   background:
     radial-gradient(ellipse 900px 560px at 12% -12%, rgba(124, 92, 255, 0.38), transparent 60%),
     radial-gradient(ellipse 700px 520px at 90% 105%, rgba(41, 196, 204, 0.26), transparent 58%),
     linear-gradient(160deg, var(--navy-deep) 0%, var(--navy-abyss) 100%);
 }
+.hero > .wrap { width: 100%; }
 .hero::before {
   content: "";
   position: absolute;
@@ -248,7 +252,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .hero-graphic { order: -1; max-width: 340px; margin: 0 auto 12px; }
 }
 @media (max-width: 700px) {
-  .hero { padding: 44px 0 56px; }
+  .hero { padding: 44px 0 56px; min-height: auto; }
 }
 
 /* ---------- generic section ---------- */
@@ -544,8 +548,9 @@ section { padding: 92px 0; }
     radial-gradient(ellipse 600px 460px at 8% 115%, rgba(41, 196, 204, 0.25), transparent 58%),
     linear-gradient(160deg, var(--navy-deep) 0%, var(--navy-abyss) 100%);
   color: var(--white);
-  border-radius: var(--radius-lg);
-  margin: 0 32px;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
   padding: 68px 40px;
   text-align: center;
   overflow: hidden;
@@ -564,16 +569,30 @@ section { padding: 92px 0; }
   mask-image: radial-gradient(ellipse 75% 75% at 70% 50%, black 20%, transparent 72%);
 }
 .contact-dots { position: absolute; top: 0; right: 0; opacity: 0.4; z-index: 0; pointer-events: none; }
-.contact-section .wrap { max-width: 640px; position: relative; z-index: 1; }
-.contact-section h2 { color: var(--white); white-space: nowrap; }
-.contact-section p { color: #b9bdde; margin: 16px 0 30px; font-size: 1.05rem; }
-.contact-meta { margin-top: 22px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.contact-email { color: var(--teal-bright); font-weight: 600; font-size: 0.95rem; }
-.contact-reply { font-size: 0.82rem; color: #8c8fbd; }
+.contact-section .wrap { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+.contact-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: 16px;
+}
+.contact-section h2 {
+  color: var(--white);
+  font-size: clamp(2rem, 3.6vw, 2.6rem);
+  line-height: 1.18;
+  margin-bottom: 20px;
+}
+.contact-section p { color: #b9bdde; margin: 0 auto 32px; max-width: 56ch; font-size: 1.05rem; line-height: 1.6; }
+.contact-meta { margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.contact-reply { font-size: 0.85rem; color: #8c8fbd; font-style: italic; }
+.contact-section .btn-teal { padding: 15px 32px; font-size: 1rem; }
 
 @media (max-width: 700px) {
-  .contact-section { margin: 0 16px; padding: 48px 24px; }
-  .contact-section h2 { white-space: normal; }
+  .contact-section { padding: 48px 24px; min-height: auto; }
+  .contact-section h2 br { display: none; }
 }
 
 /* ---------- footer ---------- */
