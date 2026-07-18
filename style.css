@@ -354,8 +354,7 @@ section { padding: 92px 0; }
 .product-card p { margin-bottom: 16px; font-size: 0.9rem; }
 
 .product-card.soon { display: flex; flex-direction: column; }
-.product-card.soon .product-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
-.product-card.soon .tag { background: transparent; border: 1.5px solid var(--line); color: var(--ink-faint); }
+.product-card.soon .product-body { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .product-card.soon h3 { color: var(--ink-soft); }
 
 @media (max-width: 700px) { .product-grid { grid-template-columns: 1fr; } }
@@ -449,11 +448,12 @@ section { padding: 92px 0; }
 }
 
 .stack-label {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 500;
   color: var(--ink-faint);
-  text-align: center;
-  margin-bottom: 22px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  margin-bottom: 18px;
 }
 
 .tech-marquee-section {
@@ -467,22 +467,22 @@ section { padding: 92px 0; }
   display: flex;
   align-items: center;
   width: max-content;
-  animation: tech-scroll 28s linear infinite;
+  animation: tech-scroll 36s linear infinite;
 }
 .tech-marquee:hover .tech-track { animation-play-state: paused; }
 .tech-item {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 0 26px;
-  font-size: 0.95rem;
+  gap: 14px;
+  padding: 0 56px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--ink-soft);
   white-space: nowrap;
 }
-.tech-item svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--teal); }
+.tech-item svg { width: 32px; height: 32px; flex-shrink: 0; color: var(--teal); }
 .tech-item svg path { fill: currentColor; }
-.tech-dot { color: var(--gold); font-size: 0.8rem; }
+.tech-dot { color: var(--navy); font-size: 1rem; }
 
 @keyframes tech-scroll {
   from { transform: translateX(0); }
