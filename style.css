@@ -323,7 +323,7 @@ section { padding: 92px 0; }
   overflow: hidden;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
-.product-card:hover { border-color: var(--teal); transform: translateY(-3px); box-shadow: 0 16px 32px -16px rgba(14, 20, 99, 0.25); }
+.product-card:hover { border-color: var(--teal); transform: translateY(-2px); }
 .product-media {
   aspect-ratio: 16 / 9;
   background: var(--navy-deep);
@@ -408,7 +408,9 @@ section { padding: 92px 0; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
+.outcome-item:hover { border-color: var(--teal); transform: translateY(-2px); }
 .tag-label {
   display: block;
   font-weight: 600;
@@ -460,22 +462,22 @@ section { padding: 92px 0; }
   display: flex;
   align-items: center;
   width: max-content;
-  animation: tech-scroll 36s linear infinite;
+  animation: tech-scroll 30s linear infinite;
 }
 .tech-marquee:hover .tech-track { animation-play-state: paused; }
 .tech-item {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  padding: 0 56px;
-  font-size: 1.5rem;
+  gap: 10px;
+  padding: 0 34px;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--ink-soft);
   white-space: nowrap;
 }
-.tech-item svg { width: 32px; height: 32px; flex-shrink: 0; color: var(--teal); }
+.tech-item svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--teal); }
 .tech-item svg path { fill: currentColor; }
-.tech-dot { color: var(--navy); font-size: 1rem; }
+.tech-dot { color: var(--navy); font-size: 0.85rem; }
 
 @keyframes tech-scroll {
   from { transform: translateX(0); }
@@ -516,6 +518,8 @@ section { padding: 92px 0; }
 }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { padding-bottom: 22px; font-size: 0.97rem; max-width: 62ch; }
+
+#faq { padding: 92px 0 40px; }
 
 /* ---------- contact ---------- */
 #contact { padding: 92px 0 40px; }
