@@ -113,6 +113,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .brand img { height: 30px; width: auto; }
 
+.wordmark-flow, .wordmark-nest {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.wordmark-flow { font-style: italic; color: var(--navy); }
+.wordmark-nest { font-style: normal; color: var(--teal); }
+
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a:not(.btn) {
   font-size: 0.92rem;
@@ -173,19 +180,46 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .hero-graphic { position: relative; z-index: 1; }
 .hero-graphic svg { width: 100%; height: auto; }
 .flow-branch { fill: none; stroke: var(--line-deep); stroke-width: 1.5; }
-.flow-hub { fill: var(--navy-deep); stroke: var(--teal-bright); stroke-width: 2; }
-.flow-end { transform-origin: center; transform-box: fill-box; animation: breathe 3.2s ease-in-out infinite; }
+.flow-hub {
+  fill: var(--navy-deep);
+  stroke: var(--teal-bright);
+  stroke-width: 2;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: hub-pulse 3.6s ease-in-out infinite;
+  animation-delay: 1.1s;
+}
+.flow-end { transform-origin: center; transform-box: fill-box; animation: breathe 3.6s ease-in-out infinite; }
 .flow-end-a { fill: var(--teal-bright); animation-delay: 0s; }
-.flow-end-b { fill: var(--gold); animation-delay: 0.6s; }
-.flow-end-c { fill: var(--teal-bright); animation-delay: 1.2s; }
+.flow-end-b { fill: var(--gold); animation-delay: 0.35s; }
+.flow-end-c { fill: var(--teal-bright); animation-delay: 0.7s; }
+.flow-output {
+  fill: none;
+  stroke: var(--teal-bright);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  animation: confirm 3.6s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
 @keyframes breathe {
   0%, 100% { opacity: 0.55; transform: scale(0.88); }
   50% { opacity: 1; transform: scale(1.1); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .flow-end { animation: none; opacity: 0.9; }
+@keyframes hub-pulse {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  20% { opacity: 1; transform: scale(1.12); }
+  40% { opacity: 0.85; transform: scale(1); }
 }
-
+@keyframes confirm {
+  0%, 40% { opacity: 0; }
+  50% { opacity: 1; }
+  85%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-end, .flow-hub, .flow-output { animation: none; opacity: 0.9; }
+}
 @media (max-width: 900px) {
   .hero .wrap { grid-template-columns: 1fr; }
   .hero-graphic { order: -1; max-width: 340px; margin: 0 auto 12px; }
@@ -200,29 +234,32 @@ section { padding: 92px 0; }
 .section-head { max-width: 620px; margin-bottom: 52px; }
 .section-head p { margin-top: 12px; font-size: 1.02rem; }
 
+#problems { padding: 56px 0; }
+#problems .section-head { margin-bottom: 28px; }
+
 /* ---------- problems: icon grid ---------- */
 .problem-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5px;
-  background: var(--line);
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 .problem-card {
-  background: var(--paper);
-  padding: 34px 32px;
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
+.problem-card:hover { border-color: var(--teal); transform: translateY(-2px); }
 .problem-card .icon {
-  width: 34px; height: 34px;
+  width: 30px; height: 30px;
   color: var(--teal);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
-.problem-card h3 { margin-bottom: 8px; }
-.problem-card p { font-size: 0.97rem; }
+.problem-card h3 { margin-bottom: 6px; font-size: 1.1rem; }
+.problem-card p { font-size: 0.94rem; }
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
   .problem-grid { grid-template-columns: 1fr; }
 }
 
