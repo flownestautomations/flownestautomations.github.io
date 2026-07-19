@@ -47,9 +47,10 @@
         <div class="scene-orb orb-a"></div>
         <div class="scene-orb orb-b"></div>
         <div class="node-caption">
-          <span class="cap-beat cap-1">Comes in.</span>
-          <span class="cap-beat cap-2">Gets handled.</span>
-          <span class="cap-beat cap-3">Every time.</span>
+          <span class="cap-beat cap-1">In.</span>
+          <span class="cap-beat cap-2">Processed.</span>
+          <span class="cap-beat cap-3">Logged.</span>
+          <span class="cap-beat cap-4">Done.</span>
         </div>
         <div class="node-row">
           <div class="node node-1">
@@ -69,6 +70,7 @@
           <div class="node-line conn-3"><span class="line-fill fill-3"></span></div>
           <div class="node node-4">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="node-badge">&#10003;</span>
           </div>
         </div>
       </div>
@@ -331,13 +333,34 @@
       <circle cx="10" cy="62" r="3" style="fill:#29c4cc;opacity:0.3"></circle>
       <circle cx="34" cy="62" r="3" style="fill:#29c4cc;opacity:0.2"></circle>
     </svg>
-    <div class="wrap">
-      <span class="contact-kicker">Let's talk</span>
-      <h2>Whatever's slowing you down,<br>we can probably automate it.</h2>
-      <p>Ready-made workflows you can deploy today, or a fully custom system built around exactly how you work. No bloated platform to learn, no long-term lock-in, and no automation experience required on your end. If it can be systemized, we'll figure out how.</p>
-      <a href="mailto:flownestautomations@gmail.com" class="btn btn-teal">Email us</a>
-      <div class="contact-meta">
-        <span class="contact-reply">Replies within one business day</span>
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <span class="contact-kicker">Let's talk</span>
+        <h2>Whatever's slowing you down,<br>we can probably automate it.</h2>
+        <p>Ready-made workflows you can deploy today, or a fully custom system built around exactly how you work.</p>
+        <div class="contact-chips">
+          <span class="contact-chip">Ready-made or fully custom</span>
+          <span class="contact-chip">No lock-in</span>
+          <span class="contact-chip">No experience needed on your end</span>
+        </div>
+        <a href="mailto:flownestautomations@gmail.com" class="btn btn-teal">Email us</a>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Usually replies within one business day
+        </div>
+      </div>
+      <div class="contact-visual" aria-hidden="true">
+        <div class="mini-row">
+          <div class="node mini-node-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 7L2 7"></path></svg>
+          </div>
+          <div class="node-line mini-conn"><span class="line-fill mini-fill"></span></div>
+          <div class="node mini-node-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span class="node-badge mini-badge">&#10003;</span>
+          </div>
+        </div>
+        <span class="mini-caption">Every message gets handled</span>
       </div>
     </div>
   </div>
