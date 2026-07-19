@@ -225,7 +225,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 30px;
+  margin-top: 22px;
   position: relative;
   z-index: 2;
 }
@@ -511,7 +511,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .node-line { width: 18px; }
   .node-line::after { right: -8px; border-top-width: 4px; border-bottom-width: 4px; border-left-width: 6px; }
   .node-row { gap: 5px; }
-  .node-caption { font-size: 0.72rem; margin-bottom: 20px; grid-template-columns: 50px 18px 50px 18px 50px 18px 50px; column-gap: 5px; }
+  .node-caption { font-size: 0.72rem; margin-top: 16px; grid-template-columns: 50px 18px 50px 18px 50px 18px 50px; column-gap: 5px; }
 }
 @media (max-width: 700px) {
   .hero { padding: 44px 0 56px; min-height: auto; }
@@ -875,19 +875,6 @@ section { padding: 92px 0; }
 
 .contact-section .btn-teal { padding: 15px 32px; font-size: 1rem; }
 
-.status-badge {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  margin-top: 22px;
-  padding: 8px 15px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.75);
-}
-
 /* ---------- contact mini-flow visual (echoes the hero pipeline) ---------- */
 .contact-visual { display: flex; flex-direction: column; align-items: center; gap: 16px; }
 .mini-row { display: flex; align-items: center; gap: 10px; }
@@ -897,6 +884,7 @@ section { padding: 92px 0; }
   justify-content: center;
   column-gap: 10px;
   font-size: 0.78rem;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
@@ -984,13 +972,15 @@ section { padding: 92px 0; }
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .contact-copy, .contact-visual { text-align: center; }
-  .contact-copy .contact-chips, .contact-copy .status-badge { justify-content: center; }
+  .contact-copy .contact-chips { justify-content: center; }
   .contact-section p { margin-left: auto; margin-right: auto; }
   .mini-caption { grid-template-columns: 50px 18px 50px; }
 }
 @media (max-width: 700px) {
   .contact-section { padding: 48px 24px; min-height: auto; }
   .contact-section h2 br { display: none; }
+  .chip-lockin { display: none; }
+  .chip-trim { display: none; }
 }
 
 /* ---------- footer ---------- */
