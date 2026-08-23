@@ -647,17 +647,7 @@ section { padding: 92px 0; }
 }
 .hosting-option.highlight .hosting-list li { color: #c7cae8; }
 .hosting-option.highlight .hosting-list li::before { background: var(--teal-bright); }
-.hosting-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--teal);
-  margin-top: auto;
-}
-.hosting-link:hover { text-decoration: underline; }
-.hosting-option.highlight .hosting-link { color: var(--teal-bright); }
+.hosting-option .btn { margin-top: auto; align-self: flex-start; }
 .hosting-divider {
   position: absolute;
   top: 50%;
